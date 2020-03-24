@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 550px;
+  text-align: center;
+}
+
+nav p {
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+  text-align: center;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+.Tilt {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(70, 70, 70));
+  margin-top: -55px;
+}
+
+.Join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 550px;
+  background-color: black;
+  color: white;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+}
+.about_text {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  border: 1px solid #9e1c99;
+}
+.about_text_mob {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  border: 1px solid #9e1c99;
+}
+
+.values_image {
+  width: 35%;
+  padding: 20px;
+}
+
+.mission_image {
+  width: 35%;
+  padding: 20px;
+}
+.features_text {
+  display: flex;
+  width: 50%;
+  padding: 120px;
+  margin: auto;
+  border: 1px solid white;
+}
+.particles {
+  position: absolute;
+}
+.particles1 {
+  position: absolute;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  margin: auto;
+}
+.email {
+  padding: 20px;
+  width: 460px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #9e1c99;
+  color: #9e1c99;
+  font-size: 1.1rem;
+}
+.email:focus {
+  border: 1px solid #9e1c99;
+  outline: #9e1c99;
+}
+button:focus {
+  border: 1px solid #9e1c99;
+  outline: #9e1c99;
+}
+button {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #9e1c99;
+  color: #9e1c99;
+  font-size: 1.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: black;
+  z-index: 2;
+}
+
+@media screen and (max-width: 756px) {
+  .about_text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #9e1c99;
+  }
+  .about_text_mob {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #9e1c99;
+  }
+  #gif {
+    width: 100%;
+  }
+  .features_text {
+    display: flex;
+    width: 25%;
+    padding: 120px;
+    margin: auto;
+    border: 1px solid white;
+  }
+  nav p {
+    font-size: 0.6rem;
+  }
+  .values_image {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .mission_image {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .email {
+    padding: 20px;
+    width: 260px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #9e1c99;
+    color: #9e1c99;
+    font-size: 1.1rem;
+  }
+}
