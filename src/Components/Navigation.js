@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <section class="top-nav">
       <div className="">
-        <img src={brain} alt="logo" style={{ height: "80px", width: "80px" }} />
+        <img src={brain} alt="logo" style={{ height: "60px", width: "60px" }} />
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container" for="menu-toggle">

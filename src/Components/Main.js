@@ -5,7 +5,7 @@ class Main extends Component {
     return (
       <div className="main" style={{ backgroundColor: "black" }}>
         <h1 className="slogan" style={{ color: "white" }}>
-          Social Media for you and your mama
+          <b>Social Media for you and your mama</b>
         </h1>
         <p>
           Nestted is a social media platform that helps users stay in touch with

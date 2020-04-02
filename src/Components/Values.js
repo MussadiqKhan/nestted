@@ -25,7 +25,6 @@ class Values extends Component {
           <p
             style={{
               padding: "50px",
-              textAlign: "justify",
               fontSize: "1.2rem",
             }}
           >

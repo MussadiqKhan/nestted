@@ -21,7 +21,6 @@ class Features extends Component {
     return {
       height: "380px",
       width: "280px",
-      border: "1px solid #9e1c99",
       paddingTop: "20px",
       textAlign: "center",
       background: "black",

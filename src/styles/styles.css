@@ -5,7 +5,8 @@ h2 {
   vertical-align: center;
   text-align: center;
 }
-
+.top-nav {
+}
 html,
 body {
   margin: 0;
@@ -28,6 +29,9 @@ body {
   color: #fff;
   height: 100px;
   padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .menu {
@@ -108,6 +112,7 @@ body {
   padding-top: 40px;
   font-size: 25px;
   margin: 0 auto;
+  font-weight: 600;
   color: white;
   text-align: left;
   width: 56%;
@@ -156,7 +161,6 @@ h1 {
   display: flex;
   width: 50%;
   margin: auto;
-  border: 1px solid #9e1c99;
 }
 .about_text_mob {
   display: flex;
@@ -300,7 +304,7 @@ button {
     display: flex;
   }
   .main {
-    margin-top: 50px;
+    margin-top: 130px;
   }
   .menu {
     position: absolute;
@@ -316,7 +320,7 @@ button {
     height: 0;
     margin: 0;
     padding: 0;
-    color: black;
+    color: transparent;
 
     border: 0;
     transition: height 400ms cubic-bezier(0.93, 1, 0.52, 1);
@@ -351,7 +355,7 @@ button {
 @media screen and (min-width: 760px) {
   .values_image1 {
     margin: 0 auto;
-    width: 50%;
+    width: 30%;
   }
   .values_image {
     display: none;
