@@ -38,12 +38,7 @@ class Features extends Component {
       <div style={Features.CONTAINER_STYLE}>
         <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
           <div className="" style={Features.CARD_STYLE}>
-            <img
-              src={family}
-              alt="mission"
-              className="mission_image"
-              style={{ width: "230px" }}
-            />
+            <img src={family} alt="mission" style={{ width: "230px" }} />
             <h2> Nestt</h2>
 
             <p
@@ -59,12 +54,7 @@ class Features extends Component {
             </p>
           </div>
           <div className="" style={Features.CARD_STYLE}>
-            <img
-              src={heart}
-              alt="values"
-              className="values_image"
-              style={{ width: "200px" }}
-            />
+            <img src={heart} alt="values" style={{ width: "200px" }} />
             <h2>Safe & Accountability</h2>
             <p
               style={{
@@ -79,12 +69,7 @@ class Features extends Component {
             </p>
           </div>
           <div className="" style={Features.CARD_STYLE}>
-            <img
-              src={Engagement}
-              alt="mission"
-              className="mission_image"
-              style={{ width: "200px" }}
-            />
+            <img src={Engagement} alt="mission" style={{ width: "200px" }} />
 
             <h2>Engagement</h2>
             <p
