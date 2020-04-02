@@ -1,37 +1,9 @@
 import React, { Component } from "react"
-import Particles from "react-particles-js"
 
 class About extends Component {
   render() {
     return (
       <div id="About" className="About">
-        <Particles
-          className="particles1"
-          params={{
-            particles: {
-              number: {
-                value: 560,
-                density: {
-                  enable: true,
-                  value_area: 1900,
-                },
-              },
-              line_linked: {
-                enable: true,
-                opacity: 0.02,
-              },
-              move: {
-                direction: "right",
-                speed: 0.2,
-              },
-              size: {
-                value: 1.5,
-              },
-            },
-
-            retina_detect: true,
-          }}
-        />
         <h1 style={{ margin: "auto", fontSize: "4rem", paddingBottom: "20px" }}>
           About
         </h1>

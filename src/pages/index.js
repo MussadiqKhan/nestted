@@ -5,7 +5,6 @@ import About from "../Components/About"
 import Join from "../Components/Join"
 import Features from "../Components/Features"
 import Navigation from "../Components/Navigation"
-import Logo from "../Components/Logo"
 import Mission from "../Components/Mission"
 import Vision from "../Components/Vision"
 import Values from "../Components/Values"
@@ -16,7 +15,6 @@ class Home extends Component {
     return (
       <div className="App">
         <Navigation />
-        <Logo />
         <Main />
         <Features />
         <About />

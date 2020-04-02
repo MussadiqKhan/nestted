@@ -1,27 +1,18 @@
 import React, { Component } from "react"
-import Particles from "react-particles-js"
 
 class Main extends Component {
   render() {
     return (
       <div className="main" style={{ backgroundColor: "black" }}>
-        <Particles
-          className="particles"
-          params={{
-            particles: {
-              number: {
-                value: 350,
-                density: {
-                  enable: true,
-                  value_area: 2100,
-                },
-              },
-            },
-          }}
-        />
-        <h1 className="slogan" style={{ color: "white", margin: "auto" }}>
+        <h1 className="slogan" style={{ color: "white" }}>
           Social Media for you and your mama
         </h1>
+        <p>
+          Nestted is a social media platform that helps users stay in touch with
+          their families. Like a hilarious sitcom, users share touching moments
+          with the world.
+        </p>
+        <button className="join-today">Join Today</button>
       </div>
     )
   }

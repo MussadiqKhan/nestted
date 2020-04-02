@@ -1,10 +1,12 @@
 import React, { Component } from "react"
-import mission from "./mission.png"
+import mission from "./mission.svg"
 
 class Mission extends Component {
   render() {
     return (
       <div id="Mission" className="About">
+        <img src={mission} alt="mission" className="mission_image1" />
+
         <h1 style={{ margin: "auto", fontSize: "4rem", paddingBottom: "20px" }}>
           Mission
         </h1>

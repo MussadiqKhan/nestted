@@ -1,18 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
-.main {
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00baf0;
+  background: black;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  height: 100px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li > a {
+  margin: 0 1rem;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #9e1c99;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 550px;
   text-align: center;
 }
-
-nav p {
-  font-size: 1.6rem;
+.main p {
+  padding-top: 40px;
+  font-size: 25px;
+  margin: 0 auto;
   color: white;
-  cursor: pointer;
-  padding: 14px;
+  text-align: left;
+  width: 56%;
+}
+h1 {
+  font-size: 45px;
+}
+.join-today {
+  padding: 20px;
+  border-radius: 40px;
+  margin-top: 50px !important;
+  width: 20%;
+  margin: 0 auto;
+  color: white;
+  border: 1px solid #9e1c99;
+  background-color: #9e1c99;
+  font-size: 1.7rem;
 }
 
 .About {
@@ -20,14 +132,9 @@ nav p {
   flex-direction: column;
   justify-content: center;
   padding-top: 150px;
-  text-align: center;
   height: auto;
   background-color: black;
   color: white;
-}
-.Tilt {
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(70, 70, 70));
-  margin-top: -55px;
 }
 
 .Join {
@@ -43,6 +150,7 @@ nav p {
 .gif {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .about_text {
   display: flex;
@@ -73,16 +181,11 @@ nav p {
   margin: auto;
   border: 1px solid white;
 }
-.particles {
-  position: absolute;
-}
-.particles1 {
-  position: absolute;
-}
 
 a {
   cursor: pointer;
   text-decoration: none !important;
+  list-style: none;
 }
 form {
   display: flex;
@@ -122,23 +225,30 @@ button {
   padding: 0;
   font-family: "Ubuntu", sans-serif;
   background-color: black;
-  z-index: 2;
 }
 
 @media screen and (max-width: 756px) {
+  .main p {
+    padding-top: 40px;
+    font-size: 25px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    width: 90%;
+  }
   .about_text {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    width: 90%;
-    margin: auto;
-    border: 1px solid #9e1c99;
+    justify-content: center;
+    border: none;
   }
   .about_text_mob {
     display: flex;
     flex-direction: column-reverse;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    border: 1px solid #9e1c99;
+    border: none;
   }
   #gif {
     width: 100%;
@@ -150,16 +260,32 @@ button {
     margin: auto;
     border: 1px solid white;
   }
-  nav p {
-    font-size: 0.6rem;
+  .join-today {
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 50px !important;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid #9e1c99;
+    background-color: #9e1c99;
+    font-size: 1.7rem;
   }
+
   .values_image {
     margin: 0 auto;
     width: 60%;
   }
-  .mission_image {
+  .values_image1 {
+    display: none;
+  }
+  .mission_image1 {
     margin: 0 auto;
     width: 60%;
+    padding-bottom: 30px;
+  }
+  .mission_image {
+    display: none;
   }
   .email {
     padding: 20px;
@@ -169,5 +295,68 @@ button {
     border: 1px solid #9e1c99;
     color: #9e1c99;
     font-size: 1.1rem;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .main {
+    margin-top: 50px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li a {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    color: black;
+
+    border: 0;
+    transition: height 400ms cubic-bezier(0.93, 1, 0.52, 1);
+  }
+  #menu-toggle:checked ~ .menu li a {
+    height: 2.5em;
+    color: white;
+
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+  .values_heading {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .gif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .values_image1 {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .values_image {
+    display: none;
+  }
+  .mission_image1 {
+    display: none;
   }
 }

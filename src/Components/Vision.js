@@ -1,15 +1,17 @@
 import React, { Component } from "react"
-import binoculars from "./binoculars.png"
+import binoculars from "./Vision.svg"
 
 class Vision extends Component {
   render() {
     return (
       <div id="Mission" className="About">
+        <img src={binoculars} alt="vision" className="values_image" />
+
         <h1 style={{ margin: "auto", fontSize: "4rem", paddingBottom: "20px" }}>
           Vision
         </h1>
         <div className="about_text">
-          <img src={binoculars} alt="vision" className="values_image" />
+          <img src={binoculars} alt="vision" className="values_image1" />
 
           <p
             style={{

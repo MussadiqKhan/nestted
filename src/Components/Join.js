@@ -4,7 +4,7 @@ class Join extends Component {
   render() {
     return (
       <div id="Join" className="Join">
-        <h1 style={{ margin: "auto", fontSize: "4rem" }}>Join Beta</h1>
+        <h1 style={{ margin: "auto", fontSize: "3rem" }}>Join Today!</h1>
         <div className="form">
           <form>
             <input
