@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import name from './name.svg';
 
 class Join extends Component {
   render() {
@@ -16,6 +17,8 @@ class Join extends Component {
             <button>Submit</button>{" "}
           </form>
         </div>
+        <img className='name' src={name} alt="logo" style={{ height: "120px", width: "200px" , margin: '0 auto'}} />
+
       </div>
     )
   }

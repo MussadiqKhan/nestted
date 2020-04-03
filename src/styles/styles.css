@@ -145,9 +145,10 @@ h1 {
 .Join {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
   justify-content: center;
   text-align: center;
-  height: 550px;
+  height: 400px;
   background-color: black;
   color: white;
 }
@@ -217,9 +218,9 @@ button:focus {
 }
 button {
   padding: 20px;
-  background-color: transparent;
+  background-color: #9e1c99;
   border: 1px solid #9e1c99;
-  color: #9e1c99;
+  color: white;
   font-size: 1.1rem;
 }
 
@@ -360,6 +361,9 @@ button {
     display: none;
   }
   .mission_image1 {
+    display: none;
+  }
+  .name{
     display: none;
   }
 }
