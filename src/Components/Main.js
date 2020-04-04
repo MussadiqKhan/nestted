@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 
 class Main extends Component {
   render() {
@@ -12,7 +13,9 @@ class Main extends Component {
           their families. Like a hilarious sitcom, users share touching moments
           with the world.
         </p>
-        <button className="join-today">Join Today</button>
+        <button className="join-today">
+          <Link to="/#Join">Join Today</Link>
+        </button>
       </div>
     )
   }

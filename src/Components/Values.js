@@ -28,9 +28,9 @@ class Values extends Component {
               fontSize: "1.2rem",
             }}
           >
-            Nestted brings Family and Local Community to Social Media while
-            helping people stay connected to their families, keep in touch with
-            their real friends and get involved in their communities.
+            Nestted brings accountability, fun, faith, honor and security to
+            Social Media while helping users love their families a little more
+            by focusing our attention on what matters the most….Family matters.
           </p>
         </div>
       </div>

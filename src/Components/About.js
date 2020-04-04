@@ -17,10 +17,7 @@ class About extends Component {
             Our first priority is to strengthen families and empower
             communities. We want to create an environment that cultivates the
             relationships between individuals, their families, and their
-            locales. Our mission is to promote nonprofits and community-orgs and
-            build a platform for successful outreach. We strive to enhance
-            lifestyles with an innovative approach that results in happy lives
-            as well as shape a better future.
+            locales.
           </p>
         </div>
       </div>

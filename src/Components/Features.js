@@ -35,8 +35,78 @@ class Features extends Component {
   }
   render() {
     return (
-      <div>
-        <div style={Features.CONTAINER_STYLE}>
+      <div id="Features" className="features">
+        <h1
+          style={{
+            color: "white",
+            textAlign: "center",
+            marginBottom: "100px",
+            marginTop: "100px",
+          }}
+        >
+          Features
+        </h1>
+        <div className="desktop">
+          <div className="desktop_view">
+            <img
+              src={family}
+              alt="mission"
+              style={{ width: "230px", margin: "0 auto" }}
+            />
+
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "1rem",
+                padding: "10px",
+              }}
+            >
+              <br />
+              Individual profiles are linked together to create a manageable
+              family profile.
+            </p>
+          </div>
+          <div className="desktop_view">
+            <img
+              src={heart}
+              alt="values"
+              style={{ width: "230px", margin: "0 auto" }}
+            />
+            <p
+              style={{
+                textAlign: "center",
+                margin: "0 auto",
+                fontSize: "1rem",
+                width: "80%",
+                padding: "10px",
+              }}
+            >
+              <br />
+              Secure messaging that notify spouse or parent of interactions with
+              others outside of the family.
+            </p>
+          </div>
+          <div className="desktop_view">
+            <img
+              src={Engagement}
+              alt="mission"
+              style={{ width: "230px", margin: "0 auto" }}
+            />
+
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "1rem",
+                padding: "10px",
+              }}
+            >
+              <br />
+              <br />
+              Families chat and share their moments with the world.
+            </p>
+          </div>
+        </div>
+        {/* <div style={Features.CONTAINER_STYLE}>
           <ReactCardCarousel>
             <div className="" style={Features.CARD_STYLE}>
               <img src={family} alt="mission" style={{ width: "230px" }} />
@@ -83,8 +153,8 @@ class Features extends Component {
               </p>
             </div>
           </ReactCardCarousel>
-        </div>
-        <img src={tribal} style={{ width: "100%", marginLeft: "-5px" }} />
+        </div> */}
+        <img src={tribal} style={{ width: "100%", marginTop: "20px" }} />
       </div>
     )
   }
