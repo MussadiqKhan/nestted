@@ -270,7 +270,7 @@ button {
     border: none;
   }
   #gif {
-    width: 90%;
+    margin: 0 auto;
   }
   .features_text {
     display: flex;
