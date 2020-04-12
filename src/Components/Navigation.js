@@ -1,14 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import name from "./name.svg"
 import brain from "./nestted.svg"
+import "../styles/styles.scss"
 
-const Navigation = () => {
+const Navigation = props => {
+  const count = 0
+
+  function click() {
+    const count = count + 1
+    props.updated(count)
+  }
   return (
     <section class="top-nav">
       <div className="">
         <img src={brain} alt="logo" style={{ height: "60px", width: "60px" }} />
-        <img className='name' src={name} alt="logo" style={{ height: "60px", width: "100px", marginLeft: '80px' }} />
+        <img
+          className="name"
+          src={name}
+          alt="logo"
+          style={{ height: "60px", width: "100px", marginLeft: "80px" }}
+        />
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container" for="menu-toggle">
@@ -16,16 +28,24 @@ const Navigation = () => {
       </label>
       <ul class="menu">
         <li>
-          <Link to="">Home</Link>
+          <Link to="" onClick={click}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/#Features">Features</Link>
+          <Link to="/#Features" onClick={click}>
+            Features
+          </Link>
         </li>
         <li>
-          <Link to="/#About">About</Link>
+          <Link to="/#About" onClick={click}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/#Join">Join Today</Link>
+          <Link to="/#Join" onClick={click}>
+            Join Today
+          </Link>
         </li>
       </ul>
     </section>

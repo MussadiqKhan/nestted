@@ -11,10 +11,17 @@ import Values from "../Components/Values"
 import Footer from "../Components/footer"
 
 class Home extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { nav: "" }
+  }
+  update = x => {
+    this.setState({ nav: this.state.nav + 1 })
+  }
   render() {
     return (
       <div className="App">
-        <Navigation />
+        <Navigation key={this.state.nav} updated={this.update} />
         <Main />
         <Features />
         <About />
