@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import name from "./name.svg"
 import brain from "./nestted.svg"
-import "../styles/styles.scss"
 
 const Navigation = props => {
   function click() {
