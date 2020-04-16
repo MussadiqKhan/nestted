@@ -15,7 +15,7 @@ class Home extends Component {
     super(props)
     this.state = { nav: "" }
   }
-  update = x => {
+  update = () => {
     this.setState({ nav: this.state.nav + 1 })
   }
   render() {

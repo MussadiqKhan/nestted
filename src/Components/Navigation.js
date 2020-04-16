@@ -1,15 +1,12 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import name from "./name.svg"
 import brain from "./nestted.svg"
 import "../styles/styles.scss"
 
 const Navigation = props => {
-  const count = 0
-
   function click() {
-    const count = count + 1
-    props.updated(count)
+    props.updated()
   }
   return (
     <section class="top-nav">
